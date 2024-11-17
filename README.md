@@ -1,85 +1,19 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="120" alt="Nest Logo" /></a>
-</p>
+tạo folder config cùng cấp với src.
+tạo file ggsheet.json
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+{
+  "type": "service_account",
+  "project_id": "ggsheetdemo-442004",
+  "private_key_id": "e17d1f9b742b684445e4e8bc35b4e12fed75733f",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCwwMA/vejvCSI3\n52aFu34PdZm+LUUGPg4d3TYT2Thiuu6z9Xz6ZokXbfWvBtFByXPq3MZa72YUl1sH\nmU8DhlfLuuWBR9WxdUTip8B62QMLsMcEyCuMLSzcwbP4wK1kUL/brE+mZTGGP/ue\nMENB8H9GtptdlMuvQLSQwAICqJ4G5eku03ajSHRZYOj+gku7fqsthKdI+Fgkm8ZV\nqacJcJAbmg30jCz7il7aoYdZVLuJ5yuxwUMjhzpS3SkmZP3Z1cv2GgZObzzzJ58H\ny81oen2GYmJxbq2BpBuBTZsTFV+3APPr+m+ncw4RrLFyUtb4di1yxKF+n5tgPRn2\nbgI2iDpZAgMBAAECggEATZzd7j9sbKYUlfqwvJFnWc94apdDQ2n1VezAZbfQ+B2A\nWpo1vlhO43Bf3PK/6UTV9y/pk52is/EAQlZx6SjRHX8cbwfFkG5fiK1Dqk3ndfcy\ndOmWoa9mjyspZVXp7W49yO6hbP3rYLlwufYUWnyJztm5YD7Jr9NYVmVRnKxA8+K+\n6QLHxmpaO701WmVLsW11H+8dP9bV5HNBLruDqAxsmodBBcnsWkQ+V+AUtFmYAVAk\nvYwMfLek2lQBtXBpCMAyz2gRyaM4a+Ib4nKd3/7nV9fUsST8KbaEHeIQbfBiVxsV\nSoYhfhfsGdJyMIykt8LlIrsJXS5zvHNa2seYzr7TbwKBgQDdoNEGcaKeotRf9f53\nSU6oNTiyew+ozDZnv8I02yVGlXFhWJ0Lq0j4zJXa7G76Hf2HpsLCg6D/bRH7NKP+\ntWaWODQ8M+Yob1jWjM+3e0ctV5IAL7we2ezS+EJakASkydOI4vtvSVnbBhx6h7/+\ne2z87/gAR6NYLvF9K6sX0a2MbwKBgQDMKkbN/7JPVg+OjDm1fbFmrzBGdaubxr9f\nN5/N6ypV7gKao57e4K/8fchPIF5N6hJ2nDYxzPgMPTyPoUo7pVwXnFNm+tycjbaG\nt6ik7j0gczZqEUDtjwK3lT40X6KHzn8QpeSIHtquogSreoA5axeMXSIAlKfglUL0\nQBI9MF4ZtwKBgBxUJwO02L2AQLc3YVxsAWLc0q91rW29FKM0TqWk8WHRTlnMEt7f\n+QbcV7dRC2prFPIW7cQhQR4FGgxLET9IfqFq87pSQ/QdL3TVMOPaHSH9lIrzjw8+\nedgJpamfyQgrSB+yK8Nw08x8Pn2nBnKH4kl+fuvCPG3UKkf+ofL8eTt/AoGBAJrQ\nJ/aGwI/2Qz+lRxE/KWkiyKl1CtbJo02xYSUFAIo+O41FKu/4UppUSrLtaXUNXEjC\ndTnYIfMt8CE9fYuy/R0ONhPtf6Hat6B53ZCK8qELnCRbxu8cNUQ+D/go2JbAV4up\nL5ykQNCRHJdnAZoIgce2y1TDZHUg2a9acjoh1gkLAoGBAKj2MsedtBjdTd19Il4j\nLpCBDqzycw97UzitiD8rHdNzKWPmPzK5Pf6g+6eQuDZpNnOdaxpLay9zvNY98D1H\nenOJBtPfvOTzQ0nLTzipGIQb3usgPhXm8YmKL/l/TQ7S89RSUASriqBpDYZUdsMC\nW5xHbvrukzq0hCmF5W4yxF8m\n-----END PRIVATE KEY-----\n",
+  "client_email": "crudsheet@ggsheetdemo-442004.iam.gserviceaccount.com",
+  "client_id": "114414166838667484745",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/crudsheet%40ggsheetdemo-442004.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg" alt="Donate us"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow" alt="Follow us on Twitter"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
-## Description
-
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
-
-## Project setup
-
-```bash
-$ npm install
-```
-
-## Compile and run the project
-
-```bash
-# development
-$ npm run start
-
-# watch mode
-$ npm run start:dev
-
-# production mode
-$ npm run start:prod
-```
-
-## Run tests
-
-```bash
-# unit tests
-$ npm run test
-
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
-```
-
-## Resources
-
-Check out a few resources that may come in handy when working with NestJS:
-
-- Visit the [NestJS Documentation](https://docs.nestjs.com) to learn more about the framework.
-- For questions and support, please visit our [Discord channel](https://discord.gg/G7Qnnhy).
-- To dive deeper and get more hands-on experience, check out our official video [courses](https://courses.nestjs.com/).
-- Visualize your application graph and interact with the NestJS application in real-time using [NestJS Devtools](https://devtools.nestjs.com).
-- Need help with your project (part-time to full-time)? Check out our official [enterprise support](https://enterprise.nestjs.com).
-- To stay in the loop and get updates, follow us on [X](https://x.com/nestframework) and [LinkedIn](https://linkedin.com/company/nestjs).
-- Looking for a job, or have a job to offer? Check out our official [Jobs board](https://jobs.nestjs.com).
-
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://twitter.com/kammysliwiec)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
+file google sheet: https://docs.google.com/spreadsheets/d/1SA-l7lm9a-FLpHANIvPUOayOWLekRk5AXUKYDktkyrQ/edit?gid=0#gid=0
